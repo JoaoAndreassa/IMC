@@ -49,4 +49,6 @@ calculo.addEventListener("click", () => {
 });
 limpa.addEventListener("click", () => {
   resultado.innerHTML = "";
+  peso.value = "";
+  altura.value = "";
 });
