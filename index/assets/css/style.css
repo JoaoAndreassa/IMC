@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+}
+h1 {
+  margin: 0;
+  padding: 10px;
+  font-size: 1.7rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.exemplo {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+ul {
+  padding: 0;
+}
+li {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.form p {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  border-color: transparent;
+  box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.411);
+}
+input::placeholder {
+  font-size: 18px;
+}
+button {
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  background-color: rgb(7, 100, 123);
+  color: aliceblue;
+  font-size: 1em;
+  border-radius: 15px;
+  border-color: transparent;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.411);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(7, 48, 58);
+}
+.resultado {
+  line-height: 30px;
+  width: 100%;
+}
+.fadeIn {
+  animation: 0.5s fadeIn forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+/*====================DIMENÇAO=============================================*/
+
+@media only screen and (max-width: 650px) {
+  .container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+/*====================DIMENÇAO=============================================*/
+
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 1.2em;
+  }
+  h1 {
+    padding: 5px;
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .exemplo {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  li {
+    font-size: 0.95rem;
+    font-weight: 300;
+  }
+  input {
+    width: 100%;
+    height: 37px;
+    font-size: 16px;
+  }
+  input::placeholder {
+    font-size: 16px;
+  }
+}
